@@ -1,4 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
    margin: 0;
    padding: 0;
+   transition:0.3s;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App{
+  background-color: #1B1D29;
+  width:100%;
+  min-height:100vh;
+  display:grid;
+  grid-gap:2rem;
+  grid-template-columns:auto auto;
+  grid-template-rows: 60% 10%;
+  justify-content: center;
+  grid-template-areas: 
+  "card card"
+  "btn_prev btn_next"
+  ;
+}
+
+.btn{
+  background-color:transparent;
+  cursor:pointer;
+  border: 2px solid #2e353f;
+  border-radius:5px;
+  font-size:1.3rem;
+  width:auto;
+  max-width:40%;
+  height:4rem;
+  justify-self: center;
+  aspect-ratio: 1/1;
+}
+.btn_prev{
+  grid-area:btn_prev
+  
+}
+.btn_next{
+  grid-area:btn_next
+}
+
+.btn:hover{
+  scale:1.2;
+}
+.btn:active{
+  scale:1;
+
+}
+
+.btn > svg > polygon{
+  fill:#569B51;
+
+}
+
+@media (min-width:800px){
+  .App{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+  }
 }
