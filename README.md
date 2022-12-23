@@ -18,3 +18,5 @@
     npm start
     npm run dev ...
 ```
+## Despliege
+[Link del despliege](https://slider-reto-nuwe.vercel.app/)
