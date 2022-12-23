@@ -8,6 +8,7 @@ const CardComment = ({user}) => {
          <div className="user_info">
             <div className="container_user_img">
                <img src={user.img} alt="" className="user_img" />
+               <img src={user.img_country} alt="" className="user_country" />
             </div>
             <h2 className="user_name">{user.user_name}</h2>
          </div>
